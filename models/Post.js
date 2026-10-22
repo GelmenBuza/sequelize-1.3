@@ -1,0 +1,9 @@
+import {DataTypes} from 'sequelize';
+import sequelize from '../database.js';
+
+const Post = sequelize.define('Post', {
+    title: { type: DataTypes.STRING, allowNull: false },
+    publishedAt: { type: DataTypes.DATE, allowNull: false },
+});
+
+export default Post;
